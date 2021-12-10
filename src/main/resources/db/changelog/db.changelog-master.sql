@@ -12,3 +12,7 @@ CREATE TABLE `tenant`
     `is_deleted`              tinyint unsigned NOT NULL DEFAULT '0' COMMENT '是否删除',
     PRIMARY KEY (`id`)
 ) COMMENT ='租户';
+
+-- changeset mawei:2
+INSERT INTO `tenant`(`tenant_name`,`employee_count`,`activate_employee_count`,`create_user`,`is_deleted`)
+VALUES ('mawei','1','1','maw-b','0');
